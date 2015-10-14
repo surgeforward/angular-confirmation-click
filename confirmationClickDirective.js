@@ -32,7 +32,7 @@
                             });
 
                             modalInstance.result.then(function () {
-                                scope.ngConfirmationClick({}); //raise an error : $digest already in progress
+                                scope.ngConfirmationClick({});
                             }, function () {
                                 /*Modal dismissed*/
                             });
