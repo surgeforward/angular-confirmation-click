@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>angular-confirmation-click</h1>
+        <h1>angular-confirmation-click</h1>        
         <p>Replacement for ng-click which launches a modal dialog (angular-ui) for confirmation.  Useful for deletes and such.</p>
 
         <p class="view"><a href="https://github.com/surgeforward/angular-confirmation-click">View the Project on GitHub <small>surgeforward/angular-confirmation-click</small></a></p>
@@ -31,6 +31,8 @@
         <h1>
 <a id="confirmation-click-directive" class="anchor" href="#confirmation-click-directive" aria-hidden="true"><span class="octicon octicon-link"></span></a>confirmation click directive</h1>
 
+<p><a href="/demo.html">View Demo</a></p>
+
 <p>An angular-ui based directive that replaces ng-click for use-cases where user confirmation is needed prior to calling the click handler.  Ex: deletes, etc.</p>
 
 <p>Installation:</p>
@@ -44,7 +46,7 @@
 
 <p>2) Add an ng-confirmation-click attribute to point to your click handler.  This handler will only get called if the user accepts the confirmation dialog that will appear.</p>
 
-<pre><code>&lt;button ng-confirmation-click="Really Rage Quit?" ng-confirmation-click="rageQuit()" class="btn btn btn-default"&gt;Rage Quit&lt;/button&gt;
+<pre><code>&lt;button ng-confirmation-message="Really Rage Quit?" ng-confirmation-click="rageQuit()" class="btn btn btn-default"&gt;Rage Quit&lt;/button&gt;
 </code></pre>
       </section>
       <footer>
