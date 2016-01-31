@@ -1,13 +1,10 @@
 # confirmation click directive
 An angular-ui based directive that replaces ng-click for use-cases where user confirmation is needed prior to calling the click handler.  Ex: deletes, etc.
 
-Installation:
+## Installation:
 
-Add a reference to ng-confirmation-click in app.js
 
-```
-var app = angular.module('myApp', [..., 'ng-confirmation-click'])
-```
+Include the confirmationClickDirective.js script in your project.  It's defined in module 'app' which it assumes will exist.
 
 
 1) Add an ng-confirmation-message attribute to the button or link.  Set it's value to a string containing the confirmation message to display upon click.
