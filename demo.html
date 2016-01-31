@@ -27,7 +27,11 @@
 			Click the "rage quit" button to trigger the confirmation message
 		</div>
 		<br/>
-		<button ng-confirmation-click="rageQuit()" ng-confirmation-message="Really rage quit?" class="btn btn-danger">Rage quit</button>
+		<button ng-confirmation-click="rageQuit()" 
+				ng-confirmation-message="Really rage quit?" 
+				ng-confirmation-title="Decision time"
+				ng-confirmation-cancel-click="dontRageQuit()"
+				class="btn btn-danger">Rage quit</button>
 	</div>
 </body>
 </html>	
