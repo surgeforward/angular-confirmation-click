@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="app">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hello AngularJS - Hello World</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+<script>
+	var rageQuitApp = angular.module("app", ['ui.bootstrap']);
+	rageQuitApp.controller("RageCtrl", function($scope, $modal) {
+		$scope.rageQuit = function(){
+			alert('Rage quit confirmed! (tableflip)')
+		};
+
+		$scope.dontRageQuit = function(){
+			alert('Rage quit aborted');
+		};
+	});
+</script>
+<script src="confirmationClickDirective.js"></script>
+</head>
+<body ng-controller="RageCtrl">	
+	<div class="container">
+		<div class="page-header" style="margin: 0">
+			<h1>Angular confirmation click demo</h1>
+		</div>
+		<div style="padding-top: 15px">
+			Click the "rage quit" button to trigger the confirmation message
+		</div>
+		<br/>
+		<button ng-confirmation-click="rageQuit()" 
+				ng-confirmation-message="Really rage quit?" 
+				ng-confirmation-title="Decision time"
+				ng-confirmation-cancel-click="dontRageQuit()"
+				class="btn btn-danger">Rage quit</button>
+	</div>
+</body>
+</html>	
