@@ -21,10 +21,10 @@ var app = angular.module('myApp', [..., 'ng-confirmation-click'])
 
 ```
 <button ng-confirmation-click="rageQuit()" 
-				ng-confirmation-message="Really rage quit?" 
-				ng-confirmation-title="Decision time"
-				ng-confirmation-cancel-click="dontRageQuit()"
-				class="btn btn-danger">Rage quit</button>
+		ng-confirmation-message="Really rage quit?" 
+		ng-confirmation-title="Decision time"
+		ng-confirmation-cancel-click="dontRageQuit()"
+		class="btn btn-danger">Rage quit</button>
 ```
 
 ## Options
