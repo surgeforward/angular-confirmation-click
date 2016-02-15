@@ -14,9 +14,7 @@ var app = angular.module('myApp', [..., 'ng-confirmation-click'])
 
 2) Add an ng-confirmation-click attribute to point to your click handler.  This handler will only get called if the user accepts the confirmation dialog that will appear.
 
-3) Optionally add an ng-confirmation-title attribute to set the dialog header content
-
-4) Optionally add an ng-confirmation-cancel-click attribute to respond to dialog cancellations
+See below for further options 
 
 
 ```
@@ -24,6 +22,10 @@ var app = angular.module('myApp', [..., 'ng-confirmation-click'])
 		ng-confirmation-message="Really rage quit?" 
 		ng-confirmation-title="Decision time"
 		ng-confirmation-cancel-click="dontRageQuit()"
+		ng-confirmation-backdrop="true"
+		ng-confirmation-animation="false"
+		ng-confirmation-yes-text="Yup"
+		ng-confirmation-cancel-text="Cold Feet"
 		class="btn btn-danger">Rage quit</button>
 ```
 
@@ -33,4 +35,10 @@ var app = angular.module('myApp', [..., 'ng-confirmation-click'])
 - `ng-confirmation-click`: callback function to execute if user accepts confirmation dialog
 - `ng-confirmation-message`: confirmation message to display in dialog
 - `ng-confirmation-title`: (optional) title of confirmation dialog box
-- `ng-confirmation-cancel-click`: (optional) callback function to execute if user cancels confirmation dialog
+- `ng-confirmation-cancel-click`: (optional) callback function to execute if user cancels 
+- `ng-confirmation-backdrop`: (optional) turn on or off dialog backdrop (true/false)
+- `ng-confirmation-animation`: (optional) turn on or off animation (true/false)
+- `ng-confirmation-yes-text`: (optional) custom text for yes button
+- `ng-confirmation-cancel-text`: (optional) custom text for cancel button
+
+confirmation dialog
